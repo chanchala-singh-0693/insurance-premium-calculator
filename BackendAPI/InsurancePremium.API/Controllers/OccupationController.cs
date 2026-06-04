@@ -6,7 +6,7 @@ namespace InsurancePremium.API.Controllers
     
     [ApiController]
     [Route("api/[controller]")]
-    [Produces("application/json")]
+    [Produces("application/json")] //specifies what request content type the action accepts
     public class OccupationController : ControllerBase
     {
         private readonly IOccupationRepository _occupationRepository;
@@ -22,8 +22,8 @@ namespace InsurancePremium.API.Controllers
 
         
         [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]  //response type and status code for Swagger
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)] //response type and status code for Swagger
         public async Task<IActionResult> GetOccupations()
         {
             try
@@ -41,8 +41,8 @@ namespace InsurancePremium.API.Controllers
 
         
         [HttpGet("ratings")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]  //response type and status code for Swagger
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]  //response type and status code for Swagger
         public async Task<IActionResult> GetRatings()
         {
             try
