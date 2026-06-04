@@ -15,7 +15,7 @@ Web app that calculates monthly insurance premium based on occupation and person
 ```
 Monthly Premium = (Death Cover Amount x Occupation Factor x Age) / 1000 / 12
 ```
-**Example:** Doctor, Age 30, Death Cover $500,000
+**Example:** Doctor, Age 30, Death Cover 500,000
  (500,000 * 1.5 * 30) / 1000 / 12 = **1,875.00 / month**
 
 ### Occupation & Factor Table
